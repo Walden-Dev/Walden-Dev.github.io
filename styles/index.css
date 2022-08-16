@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  cursor: cell;
+  background-color: #191923;
+}
+
+/* INDEX */
+
+.main {
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+.main_text {
+  position: relative;
+  color: #fbfef9;
+  font-size: 60px;
+  font-family: "Silkscreen", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contact_text {
+  position: relative;
+  color: #fbfef9;
+  font-family: "Silkscreen", cursive;
+  transition: all 0.3s linear;
+  border-radius: 20px;
+  font-size: 25px;
+  width: 150px;
+  text-align: center;
+  top: 10px;
+}
+.contact_text:hover {
+  color: #191923;
+  background-color: #fbfef9;
+}
+
+img {
+  width: 200px;
+  pointer-events: none;
+}
+
+.clicker_text
+{
+  position: relative;
+  color: #fbfef9;
+  font-family: "Silkscreen", cursive;
+  transition: all 0.3s linear;
+  border-radius: 20px;
+  font-size: 25px;
+  width: 250px;
+  text-align: center;
+}
+.clicker_text:hover {
+  color: #191923;
+  background-color: #fbfef9;
+}
+
+
+
+
