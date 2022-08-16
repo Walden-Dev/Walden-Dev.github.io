@@ -57,7 +57,9 @@ a {
     border-radius: 40px;
     border: 0px solid transparent;
     font-size: 60px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #153243;
     transition: all 0.2s ;
     user-select: none;
