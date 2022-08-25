@@ -1,5 +1,5 @@
 const myTextElement = document.querySelector('.main_text')
-const colors = ["red", "#00ff07", "blue"];
+const colors = ["#ff0000", "#09ff00", "#0000ff"];
 
 let i = 0;
 

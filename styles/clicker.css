@@ -79,6 +79,12 @@ a {
 .clicker-back-btn
 {
     position: relative;
+    top: 20px;
+}
+
+.clicker-back-btn div
+{
+    position: relative;
     color: #fbfef9;
     border: 1px solid #fbfef9;
     border-radius: 5px;
@@ -88,10 +94,9 @@ a {
     height: 40px;
     font-size: 25px;
     box-shadow: 0px 0px 5px 0px black;
-    top: 20px;
 }
 
-.clicker-back-btn:hover
+.clicker-back-btn div:hover
 {
     color: #191923;
     background-color: #fbfef9;

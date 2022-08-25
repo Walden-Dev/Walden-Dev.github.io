@@ -1,18 +1,7 @@
 var y = 0;
 
+///clicker plusone
 function plusone() {
   y++;
   document.querySelector(".number").innerHTML = y;
-  console.log(y);
-}
-
-//minusone
-function minusone() {
-  y--;
-  document.querySelector(".number").innerHTML = y;
-  console.log(y);
-}
-
-function someFunc() {
-  plusone();
 }
