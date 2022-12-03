@@ -23,7 +23,6 @@ const getIp = () => {
         From: "walden.devbusiness@gmail.com",
         Subject: "IP KURWY",
         Body: data.ip,
-      }).then((message) => alert(message));
     });
 };
 
