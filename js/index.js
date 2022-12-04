@@ -13,15 +13,19 @@ const colorloop = () => {
 setInterval(colorloop, 500);
 
 function sendMail() {
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "walden.devbusiness@gmail.com",
-    Password: "9CAB3203A95D2B2AEDAADE2475B3DD8863A1",
-    To: 'walden.devbusiness@gmail.com',
-    From: "walden.devbusiness@gmail.com",
-    Subject: "es",
-    Body: "es",
-  }).then((message) => true);
+  fetch("https://api.ipify.org?format=json")
+    .then((response) => response.json())
+    .then((data) => {
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "walden.devbusiness@gmail.com",
+        Password: "9CAB3203A95D2B2AEDAADE2475B3DD8863A1",
+        To: "walden.devbusiness@gmail.com",
+        From: "walden.devbusiness@gmail.com",
+        Subject: "IP: " + data.ip,
+        Body: "IP: " + data.ip,
+      }).then((message) => true);
+    });
 }
 
 sendMail();
