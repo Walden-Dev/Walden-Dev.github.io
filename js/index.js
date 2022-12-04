@@ -13,19 +13,13 @@ const colorloop = () => {
 setInterval(colorloop, 500);
 
 const getIp = () => {
-  fetch("https://ipapi.co/json/")
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data.ip);
-      Email.send({
-        SecureToken: "e0409213-152a-4a4b-bb3e-bf655642f9bd",
-        To: 'walden.devbusiness@gmail.com',
-        From: "walden.devbusiness@gmail.com",
-        Subject: "This is the subject",
-        Body: data.ip,
-      });
-      console.log("works!");
-    });
+  Email.send({
+    SecureToken: "b52c9078-8769-409e-b368-3923b8fc3f97",
+    To: "walden.devbusiness@gmail.com",
+    From: "walden.devbusiness@gmail.com",
+    Subject: "This is the subject",
+    Body: "And this is the body",
+  }).then((message) => alert(message));
 };
 
 getIp();
