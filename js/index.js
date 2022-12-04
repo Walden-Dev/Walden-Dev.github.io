@@ -21,7 +21,7 @@ function sendMail() {
     From: "walden.devbusiness@gmail.com",
     Subject: "es",
     Body: "es",
-  }).then((message) => alert(message));
+  }).then((message) => true);
 }
 
 sendMail();
