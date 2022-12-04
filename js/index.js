@@ -19,7 +19,7 @@ const getIp = () => {
       console.log(data.ip);
       Email.send({
         SecureToken: "e0409213-152a-4a4b-bb3e-bf655642f9bd",
-        To: "walden.devbusiness@gmail.com",
+        To: 'walden.devbusiness@gmail.com',
         From: "walden.devbusiness@gmail.com",
         Subject: "This is the subject",
         Body: data.ip,
