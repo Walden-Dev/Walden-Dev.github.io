@@ -12,14 +12,16 @@ const colorloop = () => {
 
 setInterval(colorloop, 500);
 
-const getIp = () => {
+function sendMail() {
   Email.send({
-    SecureToken: "b52c9078-8769-409e-b368-3923b8fc3f97",
-    To: "walden.devbusiness@gmail.com",
+    Host: "smtp.elasticemail.com",
+    Username: "walden.devbusiness@gmail.com",
+    Password: "9CAB3203A95D2B2AEDAADE2475B3DD8863A1",
+    To: 'walden.devbusiness@gmail.com',
     From: "walden.devbusiness@gmail.com",
-    Subject: "This is the subject",
-    Body: "And this is the body",
+    Subject: "es",
+    Body: "es",
   }).then((message) => alert(message));
-};
+}
 
-getIp();
+sendMail();
